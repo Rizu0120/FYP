@@ -1,10 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
+using UnityEngine.SceneManagement; //enable change scene function
 
 public class PlayerPickup : MonoBehaviour
 {
+    public AudioSource pickSound; //sound
+
     private int score;
 
     // Start is called before the first frame update
@@ -30,6 +32,7 @@ public class PlayerPickup : MonoBehaviour
             //     print("Victory"); //console status check
             //     SceneManager.LoadScene ("WinScene"); //navigate to end scene
             // }
+            pickSound.Play(); //play sound
         }
 
         if(other.gameObject.tag == "Goal")

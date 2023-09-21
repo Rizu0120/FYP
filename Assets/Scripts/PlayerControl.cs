@@ -18,6 +18,8 @@ public class PlayerControl : MonoBehaviour
 
     public Animator animator;
 
+    public AudioSource jumpSound;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -43,6 +45,7 @@ public class PlayerControl : MonoBehaviour
             if (Input.GetButtonDown("Jump"))
             {
                 moveDirection.y = jumpForce;
+                jumpSound.Play();
             }
         }
         

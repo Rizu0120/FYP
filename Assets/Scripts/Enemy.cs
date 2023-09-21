@@ -17,7 +17,7 @@ public class Enemy : MonoBehaviour
     void OnTriggerEnter(Collider co)
     {
         //player then deal Damage, enemy destroy self
-        if (co.name == "Player")
+        if (co.tag == "Player")
         {
             //decrease player health bar
             co.GetComponentInChildren<Health>().decrease(); //health bar(Health), perform decrease

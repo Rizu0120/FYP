@@ -22,14 +22,16 @@ public class CameraControl : MonoBehaviour
             offset = target.position - transform.position;
         }
 
-        //camera following target, called pivot
+        //camera following target, called pivot. (transform mean move, so move to target = following target)
         pivot.transform.position = target.transform.position;
         pivot.transform.parent = null;
 
+        //lock the mouse state but locking mouse will make it no longer able to click anything in further gameplay such as clicking UI button, so I disable this
         // Cursor.lockState = CursorLockMode.Locked;
     }
 
     // Update is called once per frame
+    //make it LateUpdate for smoother response
     void LateUpdate()
     {
         //camera following target, called pivot

@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
+using UnityEngine.UI; //enable UI function
 
 public class GameManager : MonoBehaviour
 {
@@ -20,9 +20,10 @@ public class GameManager : MonoBehaviour
         
     }
 
+    //update score
     public void AddCollectable(int collectableToAdd)
     {
-        currentCollectable += collectableToAdd;
-        collectableText.text = "Score: " + currentCollectable;
+        currentCollectable += collectableToAdd; //from the current score
+        collectableText.text = "Score: " + currentCollectable; //text "Score: num"
     }
 }
