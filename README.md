@@ -1,9 +1,12 @@
-# FYP 3D Game
+# FYP 3D Game made with Unity Engine
 
-Implementations are stored in "Assets" folder
+## Project Structure
+Here’s a quick overview of the main folders and their contents:
 
-Assets: Components that form the game such as environment models and texture, player models and animations
+Assets/
+Contains all the project assets, including models, textures, and scenes.
 
-Codes (Logics that make the game works): Assets > Script
+Scripts/
+Includes all the C# scripts that control the logic and interaction within the project.
 
-Additional exlplaination: 
+Some model folders also have their own animation included
